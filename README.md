@@ -14,6 +14,9 @@
 
 ---
 
+> [!WARNING]
+> This is experimental software, primarily built with AI.
+
 ## Overview
 
 **xas** is a minimal command-line utility written in C that just works, whose main purpose is execute a command with root privileges.
