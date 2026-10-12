@@ -119,10 +119,6 @@ The program requests a password before proceeding.
 
 **Note:** These examples illustrate command-line syntax only. Successful execution depends on the program's privileges, the system configuration, and the authentication implementation.
 
-## Security considerations
-
-`xas` interacts with sensitive system interfaces. It should be treated as an experimental utility until its security properties have been reviewed.
-
 Important considerations:
 
 - Access to `/etc/shadow` is restricted on typical Linux systems.
@@ -140,6 +136,10 @@ Important considerations:
 `xas` is a minimal C experiment exploring Linux authentication interfaces and privileged command execution.
 
 The project prioritizes a small codebase and a straightforward execution flow.
+
+## Known issues
+Due to certain errors, the code cannot be compiled for musl libc.
+There is no authentication cache, so it asks for the password again every time. It’s inconvenient, but secure.
 
 ## Contributing
 
